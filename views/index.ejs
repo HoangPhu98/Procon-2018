@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Procon - 2018</title>
+    <script src="js/main.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/suggest.js"></script>
+    <script src="js/restore.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body oncontextmenu="return false;">
+    <!--<h1>Procon UET - 2018</h1> -->
+    <input type="file" id="file-input" />
+    <button id="drawMap">Draw Map</button>
+    <button id="backupGame">Backup Game</button>
+    <br />
+    <input type='text' id="text-input" />
+    <button id="acceptx">Accept</button>
+
+    <div class="clear"></div>
+    <div class="infor">
+        <div id="col-1">
+            <h3>My team</h3>
+            <span class="title">Tile Score: </span>
+            <span class="content" id="myTile">0</span>
+            <br />
+            <span class="title">Surround Score: </span>
+            <span class="content" id="mySurround">0</span>
+            <br />
+            <span class="title">Total Score: </span>
+            <span class="content" id="myTotalPoint">0</span>
+            <br />
+            <div class="m-top"></div>
+            <button id="btn-undo-x1">Undo Agent1</button>
+            <button id="btn-undo-x2">Undo Agent2</button>
+        </div>
+        <div class="clear"></div>
+        <hr class="split" />
+        <div id="col-2">
+            <h3>Oponent Team</h3>
+            <span class="title">Tile Score: </span>
+            <span class="content" id="opTile">0</span>
+            <br />
+            <span class="title">Surround Score: </span>
+            <span class="content" id="opSurround">0</span>
+            <br />
+            <span class="title">Total Score: </span>
+            <span class="content" id="opTotalPoint">0</span>
+            <br />
+            <div class="m-top"></div>
+            <button id="btn-undo-o1">Undo Agent1</button>
+            <button id="btn-undo-o2">Undo Agent2</button>
+        </div>
+        <hr class="split" />
+        <div id="col-3">
+            <button id="btn-undo">Undo Game</button>
+        </div>
+        <hr />
+        <div id="split">
+            <div id="direction">
+     
+            </div>
+            <button id="changeAngle"> Sang mau Do</button>
+            <br /> 
+            <span>
+            <table id="direction-tb">
+            <tr><td></td><td>&nbsp;&nbsp;8&nbsp;&nbsp;</td><td></td></tr>
+            <tr><td>&nbsp;&nbsp;4&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;6&nbsp;&nbsp;</td></tr>
+            <tr><td></td><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td><td></td></tr>
+            </table>
+            </span>
+        </div>
+    </div>
+    <div class="wrap">
+        <div id="board"></div>
+    </div>
+    <div class="wrap">
+        <div id="boardColor"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="functional">
+        <b><span>Turn: </span><span id="displayTurn">0</span></b>
+        <br />
+        <button id="next">Next turn</button>
+    </div>
+    <div id="toggleSuggest">
+        <button id="btn-change">Turn on</button>
+        <span id="displayStatus">Suggest Mode: <span>OFF</span></span>
+        <button id="btn-change2">Turn on</button>
+        <span id="displayStatus2">Greedy Mode: <span>OFF</span></span>
+    </div>
+    
+</body>
+</html>

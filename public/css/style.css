@@ -1,0 +1,117 @@
+.clear{
+    clear: both;
+}
+
+#board{
+    text-align: center;
+    margin: 10px auto;
+    background-color:#ffffcc;
+}
+
+#board td{
+    width: 34px;
+    height: 32px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#board td:hover{
+    box-shadow: 2px 2px 2px gray;
+}
+
+#board td:active{
+    box-shadow: 2px -2px 2px gray;
+}
+
+#boardColor{
+    text-align: center;
+    margin: 10px auto;
+}
+
+#boardColor td{
+    width: 34px;
+    height: 32px;
+    border: 1px solid black;
+}
+
+.split{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.m-top{
+    margin-top: 5px;
+}
+
+#functional{
+    margin-top: 0px;
+    text-align: center;
+}
+
+.infor{
+    width: 15%;
+    float: left;
+}
+
+.wrap{
+    margin-left: 30px;
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+.title{
+    display: inline-block;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.headMyAgent{
+    background-color: #0033cc;
+}
+
+.headOpAgent{
+    background-color: #ff6600;
+}
+
+.myTeam{
+    background-color: #33cccc;
+}
+
+.opTeam{
+    background-color: #ffcc66;
+}
+
+.temp{
+    background-color: #66ff33;
+}
+
+.empty{
+    background-color: #ffffcc;
+}
+
+#toggleSuggest{
+    float: right;
+    text-align: right;
+}
+
+#btn-change{
+    width: 80px;
+    height: 25px;
+}
+#displayStatus{
+    display: inline-block;
+    width: 150px;
+    margin-right: 40px;
+}
+
+#col-3{
+    text-align: center;
+}
+
+#direction-tb td{
+    border: 1px solid black;
+}
